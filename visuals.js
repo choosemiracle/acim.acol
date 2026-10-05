@@ -209,6 +209,60 @@
       <text x="380" y="318" text-anchor="middle" class="v-caption">肯恩不会只凭一个行为判断“有没有爱”；同样的形式可以承载完全不同的心念。</text>
     `, "形式与内涵的辨别图"),
 
+    "gary-three-layers": () => base(`
+      <circle cx="380" cy="180" r="138" class="v-orbit"/>
+      <circle cx="380" cy="180" r="98" class="v-soft-circle"/>
+      <circle cx="380" cy="180" r="58" class="v-node"/>
+      <text x="380" y="174" text-anchor="middle" class="v-title">ACIM 原文</text>
+      <text x="380" y="195" text-anchor="middle" class="v-small">课程自身的语言</text>
+      <text x="380" y="105" text-anchor="middle" class="v-title">Gary 的解释</text>
+      <text x="380" y="127" text-anchor="middle" class="v-small">不二 · 梦者 · 高阶宽恕</text>
+      <text x="380" y="32" text-anchor="middle" class="v-title">《告别娑婆》的叙事框架</text>
+      <text x="380" y="53" text-anchor="middle" class="v-small">Arten / Pursah · 前世 · 历史叙事</text>
+      <path d="M238 180 H306 M454 180 H522" class="v-link dash"/>
+      <text x="380" y="338" text-anchor="middle" class="v-caption">越靠近中心，越应回到课程原文校准；越靠外层，越适合以“作者如此叙述”来阅读。</text>
+    `, "ACIM 原文、Gary 解释与告别娑婆叙事的三层关系"),
+
+    "gary-dreamer-screen": () => base(`
+      <g transform="translate(78 102)">
+        <circle cx="92" cy="78" r="70" class="v-node"/>
+        <text x="92" y="70" text-anchor="middle" class="v-title">心灵 / 梦者</text>
+        <text x="92" y="92" text-anchor="middle" class="v-small">选择老师与目的</text>
+      </g>
+      <path d="M250 180 H356" class="v-link strong" marker-end="url(#arrow)"/>
+      <text x="303" y="160" text-anchor="middle" class="v-small">投射</text>
+      <g transform="translate(356 76)">
+        <rect width="310" height="208" rx="24" class="v-form"/>
+        <rect x="24" y="26" width="262" height="130" rx="12" class="v-scene"/>
+        <circle cx="90" cy="79" r="18" class="v-dot"/>
+        <circle cx="174" cy="79" r="18" class="v-dot"/>
+        <path d="M108 79 H156" class="v-link dash"/>
+        <text x="155" y="126" text-anchor="middle" class="v-small">世界 · 身体 · 关系 · 事件</text>
+        <text x="155" y="184" text-anchor="middle" class="v-title">屏幕上的角色经验</text>
+      </g>
+      <path d="M356 282 C300 332 188 322 154 254" class="v-link strong" marker-end="url(#arrow)"/>
+      <text x="245" y="326" text-anchor="middle" class="v-small">宽恕：把因果位置带回心灵</text>
+    `, "梦者、投射与世界屏幕的因果关系图"),
+
+    "gary-forgiveness": () => base(`
+      ${pill(50,142,132,"触发 / 判断")}
+      <path d="M182 164 H244" class="v-link strong" marker-end="url(#arrow)"/>
+      ${pill(244,142,132,"抓到小我")}
+      <path d="M376 164 H438" class="v-link strong" marker-end="url(#arrow)"/>
+      ${pill(438,142,132,"撤回投射")}
+      <path d="M570 164 H628" class="v-link strong" marker-end="url(#arrow)"/>
+      <g transform="translate(628 119)">
+        <circle cx="44" cy="45" r="44" class="v-node"/>
+        <text x="44" y="41" text-anchor="middle" class="v-small">重新</text>
+        <text x="44" y="58" text-anchor="middle" class="v-small">选择</text>
+      </g>
+      <text x="116" y="118" text-anchor="middle" class="v-small">先诚实承认反应</text>
+      <text x="310" y="118" text-anchor="middle" class="v-small">不把灵性当压抑</text>
+      <text x="504" y="118" text-anchor="middle" class="v-small">不再让对方做“因”</text>
+      <text x="380" y="254" text-anchor="middle" class="v-title">结果不是“我赢了”，而是定罪失去用途</text>
+      <text x="380" y="286" text-anchor="middle" class="v-caption">现实行动照常进行；变化的是行动不再由受害感、报复与特殊性主导。</text>
+    `, "Gary 式高阶宽恕的四步内在运动"),
+
     "case-scenes": () => base(`
       <g transform="translate(52 64)">
         <rect width="132" height="105" rx="18" class="v-scene"/><rect x="22" y="28" width="88" height="8" rx="4" class="v-bar"/><rect x="22" y="48" width="58" height="8" rx="4" class="v-bar soft"/><text x="66" y="91" text-anchor="middle" class="v-small">方案被否定</text>

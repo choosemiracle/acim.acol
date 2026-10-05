@@ -145,6 +145,22 @@ nav{display:flex;gap:26px;font-size:14px;color:var(--muted)}nav a:hover{color:va
 @media(max-width:840px){.ken-intro-grid,.ken-reading-path{grid-template-columns:1fr 1fr}.ken-wall{grid-template-columns:1fr}.ken-wall i{padding:14px 0;border-left:0;border-right:0;border-top:1px dashed #b8c3bc;border-bottom:1px dashed #b8c3bc}}
 @media(max-width:520px){.ken-intro-grid,.ken-reading-path{grid-template-columns:1fr}}
 
+/* Gary Renard / The Disappearance of the Universe column */
+.gary-hero{background:radial-gradient(circle at 78% 22%,rgba(220,201,164,.26),transparent 36%)}
+.gary-intro-grid,.gary-boundaries,.gary-ken-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:28px 0}
+.gary-jafo-grid,.gary-reading-path{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:28px 0}
+.gary-intro-grid article,.gary-boundaries article,.gary-ken-grid article,.gary-jafo-grid article,.gary-reading-path article{padding:24px;border:1px solid var(--line);border-radius:16px;background:var(--cream)}
+.gary-intro-grid span,.gary-ken-grid span,.gary-jafo-grid span,.gary-reading-path span{font-size:11px;letter-spacing:.1em;color:var(--sage);font-weight:700}
+.gary-intro-grid h3,.gary-ken-grid h3,.gary-reading-path h3{font-family:var(--serif);font-size:20px;margin:8px 0 10px}
+.gary-intro-grid p,.gary-boundaries p,.gary-ken-grid p,.gary-jafo-grid p,.gary-reading-path p{font-size:14px;color:var(--muted);margin-bottom:0}
+.gary-boundaries b{font-family:var(--serif);font-size:18px;font-weight:500}
+.gary-reading-table{margin:30px 0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--white)}
+.gary-reading-table>div{display:grid;grid-template-columns:1fr 1.35fr 1.15fr;gap:12px;padding:15px 18px;border-bottom:1px solid var(--line);font-size:14px}
+.gary-reading-table>div:last-child{border-bottom:0}
+.gary-reading-table .table-head{background:#e7e5dc;font-size:12px;color:var(--sage)}
+@media(max-width:840px){.gary-intro-grid,.gary-boundaries,.gary-ken-grid{grid-template-columns:1fr}.gary-jafo-grid,.gary-reading-path{grid-template-columns:1fr 1fr}.gary-reading-table>div{grid-template-columns:1fr}.gary-reading-table .table-head{display:none}}
+@media(max-width:520px){.gary-jafo-grid,.gary-reading-path{grid-template-columns:1fr}}
+
 /* V4: inline explanatory visuals — diagrams belong to the text, not poster art */
 .explain-visual{margin:34px 0 8px;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:linear-gradient(145deg,#fbfaf5,#f1eee5);box-shadow:0 16px 44px rgba(43,63,55,.055)}
 .explain-visual.compact{margin-top:26px}
