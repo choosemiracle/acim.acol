@@ -131,6 +131,44 @@ nav{display:flex;gap:26px;font-size:14px;color:var(--muted)}nav a:hover{color:va
 .method-bridge-grid p{font-size:14px;color:var(--muted);margin:7px 0}
 .method-note{padding:17px 20px!important;background:#263a33;color:#dce5df!important;border-radius:14px}
 
+/* V4: inline explanatory visuals — diagrams belong to the text, not poster art */
+.explain-visual{margin:34px 0 8px;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:linear-gradient(145deg,#fbfaf5,#f1eee5);box-shadow:0 16px 44px rgba(43,63,55,.055)}
+.explain-visual.compact{margin-top:26px}
+.visual-canvas{padding:18px 22px 4px}
+.concept-svg{display:block;width:100%;height:auto;max-height:390px}
+.explain-visual figcaption{display:grid;grid-template-columns:240px 1fr;gap:24px;padding:18px 22px 21px;border-top:1px solid var(--line);background:rgba(255,253,248,.76);margin:0}
+.explain-visual figcaption b{font-family:var(--serif);font-size:16px;font-weight:500;color:var(--ink)}
+.explain-visual figcaption span{font-size:13px;color:var(--muted);line-height:1.75}
+.concept-svg text{font-family:var(--sans)}
+.concept-svg .v-title{font-family:var(--serif);font-size:17px;fill:var(--ink)}
+.concept-svg .v-text{font-size:13px;fill:var(--ink)}
+.concept-svg .v-small{font-size:11px;fill:#66766f}
+.concept-svg .v-caption{font-size:11px;fill:#73827b}
+.concept-svg .v-pill{fill:#fffdf8;stroke:#cbd4ce;stroke-width:1.2}
+.concept-svg .v-pill.accent{fill:#dfeae2;stroke:#9eb3a6}
+.concept-svg .v-node{fill:#e5ece6;stroke:#93a99d;stroke-width:1.4}
+.concept-svg .v-node-inner{fill:none;stroke:#fff;stroke-width:1;opacity:.8}
+.concept-svg .v-orbit{fill:none;stroke:#bdc9c2;stroke-width:1.2;stroke-dasharray:4 7}
+.concept-svg .v-orbit.inner{opacity:.6}
+.concept-svg .v-link{fill:none;stroke:#92a59a;stroke-width:1.4}
+.concept-svg .v-link.strong{stroke:#617d6e;stroke-width:2}
+.concept-svg .v-link.dash{stroke-dasharray:5 6}
+.concept-svg .v-arrow{fill:#7e9589}
+.concept-svg .v-soft-circle{fill:#edf0e9;fill-opacity:.78;stroke:#c2ccc6;stroke-width:1.2}
+.concept-svg .v-intersection{fill:#d9e5dc;fill-opacity:.86;stroke:#9eb1a5;stroke-width:1}
+.concept-svg .v-form{fill:#f6f1e5;stroke:#c8bfae;stroke-width:1.2}
+.concept-svg .v-output{fill:#e3ebe5;stroke:#a7b7ae;stroke-width:1.2}
+.concept-svg .v-dot{fill:#dce8e0;stroke:#8fa499;stroke-width:1.2}
+.concept-svg .v-person{fill:#cbdacf;stroke:#879d91;stroke-width:1.2}
+.concept-svg .v-stream{fill:none;stroke-width:28;stroke-linecap:round;opacity:.38}
+.concept-svg .v-stream.left{stroke:#bfd0c6}.concept-svg .v-stream.right{stroke:#decdaa}
+.concept-svg .v-lens{fill:#edf1ec;stroke:#91a79b;stroke-width:2}
+.concept-svg .v-lens-inner{fill:#fffdf8;stroke:#c3cec8;stroke-width:1}
+.concept-svg .v-wave{fill:none;stroke:#87a193;stroke-width:4;stroke-linecap:round}
+.concept-svg .v-scene{fill:#fffdf8;stroke:#c5d0c9;stroke-width:1.2}
+.concept-svg .v-bar{fill:#789184}.concept-svg .v-bar.soft{fill:#c8d4cd}
+.scene-map .visual-canvas{padding-bottom:10px}
+
 @media(max-width:840px){
   .layer-map{grid-template-columns:repeat(2,1fr)}
   .concept-river{grid-template-columns:1fr}
@@ -139,6 +177,7 @@ nav{display:flex;gap:26px;font-size:14px;color:var(--muted)}nav a:hover{color:va
   .concept-list{grid-template-columns:repeat(2,1fr);max-height:none}
   .case-index{grid-template-columns:repeat(2,1fr)}
   .confusion-grid{grid-template-columns:1fr}
+  .explain-visual figcaption{grid-template-columns:1fr;gap:7px}
 }
 @media(max-width:840px){nav{display:none}.hero{grid-template-columns:1fr;padding-top:60px}.hero h1{font-size:39px}.hero-visual{height:360px}.orbit-a{width:250px;height:250px}.orbit-b{width:330px;height:330px}.pole-left{left:2%}.pole-right{right:2%}.journey{grid-template-columns:1fr}.bridge{padding:20px;flex-direction:row}.bridge i{transform:rotate(90deg)}.theme-layout{grid-template-columns:1fr}.theme-tabs{display:grid;grid-template-columns:1fr 1fr}.compare,.practice-columns,.lens-grid,.about,.theory-columns,.dual-lens,.scenario-steps{grid-template-columns:1fr}.path-grid,.portal-grid,.pillar-grid,.life-cases,.misuse-grid,.rhythm-grid,.weekly-grid,.four-stage-grid{grid-template-columns:1fr 1fr}.three-grid,.tension-grid,.wholehearted-grid{grid-template-columns:1fr}.integration-flow,.reset-grid{grid-template-columns:repeat(2,1fr)}.section{padding:76px 22px}.section h2{font-size:31px}.article-hero{padding:72px 22px 56px}.article-hero h1{font-size:38px}.article-section{padding:58px 22px}.theory-map{grid-template-columns:1fr}.level-grid{grid-template-columns:1fr}.formula{grid-template-columns:1fr}.formula i{display:none}.course-hero{padding:72px 22px 56px}.course-hero h1{font-size:38px}.transformation-table>div,.fusion-matrix>div{grid-template-columns:1fr}.table-head,.matrix-head{display:none!important}}
 @media(max-width:520px){
@@ -150,5 +189,9 @@ nav{display:flex;gap:26px;font-size:14px;color:var(--muted)}nav a:hover{color:va
   .concept-one{font-size:18px;padding:16px}
   .concept-river{padding:20px}
   .case-scene{grid-template-columns:1fr}
+  .visual-canvas{padding:8px 8px 0}
+  .explain-visual{border-radius:16px;margin:24px 0 8px}
+  .explain-visual figcaption{padding:15px 16px 17px}
+  .concept-svg{min-height:220px}
 }
 @media(max-width:520px){.hero{padding:48px 20px}.hero h1{font-size:34px}.hero-actions{flex-direction:column;align-items:stretch}.hero-visual{height:320px}.orbit-b{width:290px;height:290px}.orbit-a{width:220px;height:220px}.pole{font-size:10px;padding:9px 12px}.theme-tabs,.path-grid,.portal-grid,.pillar-grid,.life-cases,.misuse-grid,.rhythm-grid,.weekly-grid,.four-stage-grid,.integration-flow,.reset-grid{grid-template-columns:1fr}.theme-panel,.practice-card{padding:24px}.section{padding:64px 20px}.article-hero{padding:54px 20px 42px}.article-hero h1{font-size:32px}.article-lead{font-size:19px}.article-section{padding:48px 20px}.article-section h2{font-size:28px}.contrast-line{grid-template-columns:1fr;gap:10px}.contrast-line>span{transform:rotate(90deg)}.identity-stack>div,.maturity-path>div{grid-template-columns:1fr}.closing-thesis{padding:24px}.closing-thesis h3{font-size:21px}.course-hero{padding:54px 20px 42px}.course-hero h1{font-size:32px}.course-keyline{align-items:flex-start}.portal-card{min-height:0}.scenario-panel{padding:22px}footer{padding:25px 20px;display:block}}
