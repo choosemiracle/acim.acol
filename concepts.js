@@ -1,0 +1,62 @@
+const concepts=[
+{id:"separation",course:"ACIM",layer:"reality",zh:"分离",en:"Separation",one:"把自己经验为与上主、他人和完整性彼此隔绝。",position:"ACIM 把分离视为整个小我思想体系的根部：罪咎、恐惧、攻击、匮乏与特殊性，都从“我们真的分开了”这一前提出发。",misread:"把“分离不真实”理解成“现实中的差异、冲突和伤害都不用处理”。",life:"当你心里出现“只有我倒霉”“他得利就等于我吃亏”“没人真正懂我”时，先留意你是否已把不同解释成了隔绝。",links:"小我 · 特殊关系 · 牺牲 · 合一",source:"ACIM 正文中关于 separation、sacrifice of oneness、special relationship 的论述。"},
+{id:"perception",course:"ACIM",layer:"mind",zh:"知觉",en:"Perception",one:"我们对经验的解释方式，不等同于真知本身。",position:"ACIM 的训练不是要求你制造“正面想法”，而是看见知觉受目的、信念与选择影响。纠正知觉只是通往 knowledge 的过渡。",misread:"把知觉理解成“凡事换个角度想就好”。",life:"开会被否定时，先分成两行写：摄像机拍到的事实；我心里加上的解释。你会立刻看到知觉怎样塑造痛苦。",links:"目的 · 投射 · 宽恕 · 真知",source:"ACIM 正文关于 right perception、knowledge，以及反复追问“What FOR?”的段落。"},
+{id:"ego",course:"ACIM",layer:"mind",zh:"小我",en:"Ego",one:"以分离、比较、特殊性与防卫维持自己的思想体系。",position:"小我不是“坏脾气”或“自私人格”的同义词。它是一整套从分离前提出发、不断寻找证据证明自身的解释系统。",misread:"把小我变成另一个需要憎恨、压抑或消灭的内在敌人。",life:"当你急于证明正确、维护形象、贬低别人来稳定自己时，比“我怎么这么有小我”更有用的问题是：我现在想保护什么身份？",links:"分离 · 特殊性 · 防卫 · 投射",source:"ACIM 正文中 ego thought system、defenses、specialness 相关论述。"},
+{id:"holy-spirit",course:"ACIM",layer:"mind",zh:"圣灵",en:"Holy Spirit",one:"代表另一种解释与选择原则，把经验重新用于回归真理。",position:"在 ACIM 的语言中，圣灵不是帮助小我把世界经营得更成功的顾问，而是重新解释我们已经制造的经验，使其不再服务分离。",misread:"把圣灵当作替自己预测结果、给出所有外在答案的超自然咨询师。",life:"做决定前，把问题从“哪个结果保证我不受伤”改成“哪个方向更少攻击、更少牺牲、更服务共同利益”。",links:"目的 · 宽恕 · 奇迹 · 平安",source:"ACIM 正文与教师手册中关于 Holy Spirit 重新解释、共同利益与和平的主题。"},
+{id:"projection",course:"ACIM",layer:"mind",zh:"投射",en:"Projection",one:"把自己不愿承认的内容放到外面，再从外面看见它。",position:"投射维持了“问题在外面”的感觉，也让定罪显得合理。宽恕的重要一步，就是把纠正的焦点从对方身上收回来。",misread:"凡是别人做错事，都解释成“其实只是我的投射”。",life:"当你连续几天反复想着某人的错误，问：除了事实本身，我正在让这个人替我承载哪一种羞耻、恐惧或无力？",links:"定罪 · 宽恕 · 纠正 · 责任",source:"ACIM 对 correction placed outside yourself、brother’s sins 与 projection 的相关论述。"},
+{id:"forgiveness",course:"ACIM",layer:"practice",zh:"宽恕",en:"Forgiveness",one:"撤回定罪与身份固定，让错误不再决定彼此是谁。",position:"ACIM 的宽恕不是道德优越式的“我原谅你”，而是解除罪咎、投射和攻击循环，使关系重新服务于疗愈。",misread:"宽恕等于继续忍受、取消责任、假装自己不痛。",life:"你仍可以终止合作、报警、追责、拒绝；练习发生在：不再用事件把任何人固定为永恒的罪人，也不把自己固定成永恒的受害者。",links:"投射 · 奇迹 · 神圣关系 · 平安",source:"ACIM 正文关于 forgiveness、end of guilt、holy relationship 的论述。"},
+{id:"miracle",course:"ACIM",layer:"practice",zh:"奇迹",en:"Miracle",one:"从恐惧与罪咎的看法，转向爱与无罪性的知觉转变。",position:"奇迹首先不是外在超常事件，而是知觉的改变。它把“彼此利益冲突”的结构，转成疗愈不能以他人的牺牲为代价。",misread:"把奇迹等同于愿望实现、财富显化或不可思议的事件。",life:"冲突中，你第一次不靠羞辱、操控或牺牲来解决问题，而发现一个不需要任何人被贬低的方案，这就是很实际的奇迹练习。",links:"宽恕 · 给予与接收 · 疗愈 · 共同利益",source:"ACIM 关于 miracle、healing sees no specialness、giving and receiving are the same 的论述。"},
+{id:"special-relationship",course:"ACIM",layer:"relation",zh:"特殊关系",en:"Special Relationship",one:"把关系用来填补匮乏、交换价值、获取特殊身份。",position:"特殊关系的重点不在“亲密不亲密”，而在关系的目的：我是否要求你给我某种东西，才能证明我完整、有价值或安全。",misread:"以为 ACIM 反对爱情、家庭或深度亲密。",life:"把“如果你爱我，你就应该……”补完。后半句经常会暴露关系中隐藏的交换合同。",links:"特殊性 · 牺牲 · 匮乏 · 神圣关系",source:"ACIM 正文关于 special relationship、completion、specialness 与 sacrifice 的章节。"},
+{id:"holy-relationship",course:"ACIM",layer:"relation",zh:"神圣关系",en:"Holy Relationship",one:"同一段关系换了目的：从索取与定罪，转向共同疗愈。",position:"神圣关系不是完美无冲突的关系，而是两个人不再把彼此只当作满足需求或承载罪咎的工具。",misread:"把神圣关系浪漫化成“灵魂伴侣”或天然高度契合。",life:"你能不能在最想证明对方错的时候，仍记得共同目的比赢更重要？这比“我们很有缘”更接近神圣关系的考验。",links:"宽恕 · 神圣一刻 · 共同目的 · 给予",source:"ACIM 对 holy relationship、共同释放罪咎、共同给予所收到之物的论述。"},
+{id:"holy-instant",course:"ACIM",layer:"practice",zh:"神圣一刻",en:"Holy Instant",one:"在时间中暂时停止旧有过去与恐惧的解释，让另一种经验进入。",position:"ACIM 把 holy instant 描述为时间中的一个窗口：不是靠过去来定义现在，也不是靠未来保证安全。",misread:"把它当成必须出现强烈神秘体验的特殊时刻。",life:"准备发出一封愤怒邮件前，给自己 90 秒，不复述故事，只看此刻。你创造的不是神秘气氛，而是一点“不让过去自动接管现在”的空间。",links:"当下 · 宽恕 · 神圣关系 · 平安",source:"ACIM 关于 holy instant 是“eternity set in a frame of time”的论述。"},
+{id:"sacrifice",course:"ACIM",layer:"relation",zh:"牺牲",en:"Sacrifice",one:"相信某个人必须失去，另一个人才可能得到。",position:"ACIM 把牺牲视为攻击与交易的重要轴心。它挑战的不只是自我牺牲，也包括“为了我的安全、成功或幸福，别人必须被减少”。",misread:"因此拒绝所有让步、照顾和承担。",life:"问自己：这个方案是否暗含“必须有人被压住、羞辱、耗尽或沉默，事情才能成立”？如果是，牺牲逻辑可能正在运行。",links:"特殊关系 · 给予接收 · 共同利益 · 边界",source:"ACIM Chapter 26 对 sacrifice、somebody must lose、giving and receiving 的集中论述。"},
+{id:"real-world",course:"ACIM",layer:"reality",zh:"真实世界",en:"Real World",one:"知觉被净化后，不再由罪咎、攻击和分离目的组织的经验世界。",position:"真实世界仍属于知觉层，不等同于 knowledge 本身；它是学习能抵达的边界，之后学习完成其任务。",misread:"把真实世界理解成未来会出现的完美社会或乌托邦。",life:"同一个办公室没有突然变美，但你不再处处寻找威胁、证明和敌人；情境外形未必变，经验世界已经开始不同。",links:"正确知觉 · 真知 · 学习终点 · 平安",source:"ACIM 关于 real world、learning ends、knowledge beyond the curriculum 的论述。"},
+{id:"wholeheartedness",course:"ACOL",layer:"mind",zh:"全心",en:"Wholeheartedness",one:"心与心智不再被经验为彼此分裂，而共同参与认识与生活。",position:"ACOL 17.17 明确把 wholeheartedness 说明为 united mind and heart。它不是“心胜过脑”，而是结束内部互相否认。",misread:"把全心理解成听感觉、不讲逻辑。",life:"思想上说“我应该留下”，身体持续紧绷，心里却一直悲伤。全心不是选一个声音压过其他，而是先让这些信息都进入同一个诚实空间。",links:"The Heart · The Mind Engaged · Unity · Sincerity",source:"ACOL 17.17–18.16，关于 heart and mind are not separate、integrated mind and heart。"},
+{id:"joining",course:"ACOL",layer:"relation",zh:"结合",en:"Joining",one:"不再把自己维持为封闭单元，允许关系成为认识和转化的方式。",position:"ACOL 早期把 joining 与 forgiveness、relationship 连在一起，为后面的 union and relationship 铺路。",misread:"把结合等同于没有界限、完全一致或情绪融合。",life:"真正结合可能表现为：我能听见你的不同，而不急着消灭差异；也不需要放弃自己的真实来换取关系。",links:"宽恕 · 关系 · 合一 · 全心",source:"ACOL Book One 中关于 Forgiveness / Joining 与 Relationship 的章节。"},
+{id:"union-relationship",course:"ACOL",layer:"relation",zh:"合一与关系",en:"Union and Relationship",one:"合一不取消关系；差异也不必成为分离的证据。",position:"ACOL 后期把 union and relationship 提升为认识与创造的核心结构，并强调 true vision 是看见关系与合一。",misread:"“大家本来一体，所以不需要边界、角色和责任。”",life:"团队中意见不同并不等于关系破裂。你可以保持明确职责和不同判断，同时不把异议者变成敌人。",links:"Shared Vision · Relationship · Creation · One Self",source:"ACOL Treatise on Unity 2.28–2.33，以及后期关于 union and relationship 的论述。"},
+{id:"personal-self",course:"ACOL",layer:"form",zh:"个人自我",en:"Personal Self",one:"在时间、关系与形式中的个人表达，不必永远代表分离的小我。",position:"ACOL 专门用一篇 Treatise 讨论 personal self：重点不是消灭个人性，而是使个人形式不再只是虚假身份的代表。",misread:"“做真实的自己”就是所有冲动、欲望和个性都应该被合理化。",life:"你的风格、技能和性格可以保留；关键是它们是否仍被用来证明优越、特殊或隔绝，还是成为真实贡献的形式。",links:"True Self · Representation · Form · Expression",source:"ACOL A Treatise on the Personal Self，以及 20.24 对 personal self 与 true identity 的区分。"},
+{id:"true-self",course:"ACOL",layer:"reality",zh:"真实 Self / 基督之我",en:"True Self / Christ Self",one:"超越个人故事而又能通过个人形式表达的真实身份。",position:"ACOL 不只要求越过 personal self，也强调真实 Self 可以进入表达、关系与形式。",misread:"制造一个更神圣、更正确、更不容质疑的“高我人格”。",life:"当你不再靠职位、关系状态、财富或评价来回答“我值不值得”，这些角色反而更可能被你自由而诚实地使用。",links:"Personal Self · Christ-consciousness · Expression · Union",source:"ACOL The Embrace、Treatise on the Personal Self 与 Dialogues 对 Self 的展开。"},
+{id:"acceptance",course:"ACOL",layer:"practice",zh:"接受",en:"Acceptance",one:"停止以缺失和抗拒作为起点，愿意承认已经在场的真实。",position:"ACOL 后期越来越强调 acceptance and awareness：不是继续获得更多身份，而是愿意接受、觉知并活出所知。",misread:"接受现状等于不改变、不行动。",life:"先承认“这个项目确实失败了”“我确实很难过”，停止与事实争战，然后再决定下一步。改变从事实开始，不从自我羞辱开始。",links:"Willingness · Awareness · Forty Days · Direct Knowing",source:"ACOL Dialogues 3.13 关于 acceptance、awareness、willingness，以及 Forty Days 的 Accept 系列主题。"},
+{id:"direct-knowing",course:"ACOL",layer:"mind",zh:"直接知晓",en:"Direct Knowing",one:"认识不再只依赖概念堆积，而从合一、关系与内在觉知中发生。",position:"ACOL 推动读者逐步离开永久“学生身份”，但不是反知识，而是反对用不断学习维持“真理还在我之外”。",misread:"我的直觉永远正确，所以无需学习、验证或听取反馈。",life:"重大决定时，既允许内在安静告诉你什么，也把数据、合同、身体反应、他人反馈和后果纳入。wholehearted knowing 经得起现实。",links:"Beyond Learning · Awareness · Dialogue · Wholeheartedness",source:"ACOL Dialogues 3.13–3.17、Treatise 10.14–11，关于 leaving learning behind。"},
+{id:"elevated-form",course:"ACOL",layer:"form",zh:"提升的形相自我",en:"Elevated Self of Form",one:"真实 Self 在形式中的持续体现，是 ACOL 对具身问题的大胆展开。",position:"这是 ACOL 与 ACIM 张力最明显的概念之一。ACOL 更积极讨论 Self 与 form 的结合、shared consciousness 在形式中的表达。",misread:"身体会变成完美、不会衰老或不需要医学照顾。",life:"更扎实的理解是：不把身体当作全部身份，也不把它当敌人；睡眠、疾病、节律、触觉、边界都成为“我如何活出真实”的一部分。",links:"Body · Personal Self · Christ-consciousness · Incarnation",source:"ACOL Dialogues 与后期对 elevated Self of form、Christ-consciousness in form 的论述。"},
+{id:"giving-receiving",course:"ACOL",layer:"relation",zh:"给予与接收为一",en:"Giving and Receiving as One",one:"给予与接收不再被经验为两边的交易，而成为共享意识中的同一运动。",position:"ACOL 把这一思想进一步带入 elevated Self of form：给予与接收不仅是理念上的一，也要在形式与关系中被表达。",misread:"真正的给予就是无限付出，不需要保护自己。",life:"一次诚实反馈既是给予，也是接收；一个清楚的拒绝也可能保护关系双方免于虚假承诺。不是“谁牺牲”，而是关系整体是否更真实。",links:"Union · Relationship · Sharing · Creation",source:"ACOL Dialogues 3.11–3.16 关于 giving and receiving as one。"},
+{id:"creation-acol",course:"ACOL",layer:"practice",zh:"创造 / 重新创造",en:"Creation / Creating Anew",one:"让真实通过关系、个体与形式出现新的表达，而不是重复过去。",position:"ACOL 把“离开学习”与“create anew”相连：若只从过去的知识复制，容易只是延长过去；创造要求在合一与关系中参与。",misread:"只要是“灵感”产生的东西，就天然是真实创造。",life:"做一个项目时，不只问市场上已经有什么模板，也问：在当前人、关系与现实条件下，有什么东西是此刻才可能出现的？然后仍然接受编辑与检验。",links:"Direct Knowing · Shared Vision · Form · Dialogue",source:"ACOL Treatise 10.14–11.1、2.32–2.33，以及 19.11–19.14 对 creating the new 的讨论。"},
+{id:"shared-vision",course:"ACOL",layer:"mind",zh:"共享视野",en:"Shared Vision",one:"不再以分离眼光只看孤立对象，而看见关系、联系与整体。",position:"ACOL 将 Christ-consciousness 的 vision 描述为 seeing in union and relationship，并把它连接到 creating anew。",misread:"把所有事件都硬解释成“宇宙安排好的意义”。",life:"项目失败不只看“谁犯错”，还看系统、信息流、角色、激励与关系怎样共同造成结果——这是一种很现实的关系性观看。",links:"True Vision · Union · Relationship · Creation",source:"ACOL Treatise on Unity 2.28–2.33。"},
+{id:"bridge-purpose",course:"BRIDGE",layer:"practice",zh:"目的先于手段",en:"Purpose Before Means",one:"先问“这件事要服务什么”，再讨论“我该怎么做”。",position:"ACIM 反复提醒“What FOR?”；ACOL 则要求行动从更完整的 Self 与关系中出现。两者都帮助我们避免只在手段层焦虑。",misread:"只要目的好，手段就可以随意。",life:"开会前先写一句：这次会议的共同目的是什么？若答案只是“让大家同意我”，你已经知道真正的问题在哪里。",links:"Purpose · Wholeheartedness · Decision · Expression",source:"ACIM 关于“What FOR?”与 purpose 的论述；ACOL 关于 wholehearted participation 与 expression 的展开。"},
+{id:"bridge-boundary",course:"BRIDGE",layer:"relation",zh:"边界中的合一",en:"Unity with Boundaries",one:"内在不制造敌人，外在仍可以有清楚的界限、角色与责任。",position:"这是本站为了现实应用而整理的桥梁概念：用 ACIM 的不定罪与 ACOL 的差异中合一，避免灵性实践滑向纵容或混同。",misread:"边界代表分离，因此越有爱越不该说不。",life:"“我不认为你是坏人；但这件事我不会继续参与。”这句话可以同时包含宽恕、差异与责任。",links:"Forgiveness · Union · Relationship · Responsibility",source:"本站整合框架；不是原书中的固定术语。"},
+{id:"bridge-action",course:"BRIDGE",layer:"practice",zh:"最少攻击的具体行动",en:"Least-Attacking Next Step",one:"在不否认事实的前提下，选择最清楚、最诚实、最少攻击的一步。",position:"这是本站把 ACIM 的非攻击、共同利益，与 ACOL 的表达、具身和关系整合成的行动准则。",misread:"最少攻击就是最温柔、最不让别人难受。",life:"该解雇时可以解雇，该拒绝时可以拒绝；关键在于不通过羞辱、报复、模糊和人格攻击来完成必要行动。",links:"Miracle · Expression · Boundaries · Responsibility",source:"本站实践框架；用于把两书原则转译为现实行动。"}
+];
+
+const layerName={reality:"实相",mind:"心智 / 认识",relation:"关系",form:"具身 / 形式",practice:"实践 / 创造"};
+let activeCourse="all",activeLayer="all",activeId="separation";
+const list=document.getElementById("conceptList"),detail=document.getElementById("conceptDetail");
+
+function filtered(){
+ return concepts.filter(c=>(activeCourse==="all"||c.course===activeCourse)&&(activeLayer==="all"||c.layer===activeLayer));
+}
+function renderList(){
+ const items=filtered();
+ if(!items.some(c=>c.id===activeId)&&items.length) activeId=items[0].id;
+ list.innerHTML=items.map(c=>`<button class="concept-item ${c.id===activeId?"active":""}" data-id="${c.id}"><span>${c.course}</span><b>${c.zh}</b><small>${c.en}</small></button>`).join("");
+ list.querySelectorAll(".concept-item").forEach(btn=>btn.addEventListener("click",()=>{activeId=btn.dataset.id;renderList();renderDetail();}));
+ renderDetail();
+}
+function renderDetail(){
+ const c=concepts.find(x=>x.id===activeId);
+ if(!c){detail.innerHTML="<p>当前筛选没有条目。</p>";return;}
+ detail.innerHTML=`
+ <div class="concept-detail-head"><div><span class="concept-badge">${c.course} · ${layerName[c.layer]}</span><h3>${c.zh}</h3><p class="concept-en">${c.en}</p></div><div class="concept-mark" aria-hidden="true">◌</div></div>
+ <p class="concept-one">${c.one}</p>
+ <div class="concept-detail-grid">
+  <section><small>在体系中的位置</small><p>${c.position}</p></section>
+  <section><small>最常见误读</small><p>${c.misread}</p></section>
+  <section><small>在生活中怎样认出</small><p>${c.life}</p></section>
+  <section><small>关联概念</small><p>${c.links}</p></section>
+ </div>
+ <div class="concept-source"><b>原书线索</b><span>${c.source}</span></div>`;
+}
+document.querySelectorAll("#courseFilter button").forEach(btn=>btn.addEventListener("click",()=>{
+ activeCourse=btn.dataset.course;document.querySelectorAll("#courseFilter button").forEach(b=>b.classList.toggle("active",b===btn));renderList();
+}));
+document.getElementById("layerFilter").addEventListener("change",e=>{activeLayer=e.target.value;renderList();});
+renderList();
