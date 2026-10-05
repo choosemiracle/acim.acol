@@ -131,6 +131,20 @@ nav{display:flex;gap:26px;font-size:14px;color:var(--muted)}nav a:hover{color:va
 .method-bridge-grid p{font-size:14px;color:var(--muted);margin:7px 0}
 .method-note{padding:17px 20px!important;background:#263a33;color:#dce5df!important;border-radius:14px}
 
+/* Ken Wapnick column */
+.ken-hero{background:radial-gradient(circle at 76% 22%,rgba(184,201,190,.28),transparent 34%)}
+.ken-intro-grid,.ken-reading-path{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:28px 0}
+.ken-intro-grid article,.ken-reading-path article{padding:24px;border:1px solid var(--line);border-radius:16px;background:var(--cream)}
+.ken-intro-grid span,.ken-reading-path span{font-size:11px;letter-spacing:.1em;color:var(--sage);font-weight:700}
+.ken-intro-grid h3,.ken-reading-path h3{font-family:var(--serif);font-size:20px;margin:8px 0 10px}
+.ken-intro-grid p,.ken-reading-path p{font-size:14px;color:var(--muted);margin-bottom:0}
+.ken-wall{display:grid;grid-template-columns:1fr 150px 1fr;gap:18px;align-items:stretch;margin:30px 0}
+.ken-wall>div{display:flex;flex-direction:column;justify-content:center;min-height:150px;padding:24px;border-radius:16px;border:1px solid var(--line);background:var(--cream)}
+.ken-wall small{color:var(--sage);font-weight:700}.ken-wall b{font-family:var(--serif);font-size:22px;margin:7px 0}.ken-wall span{font-size:13px;color:var(--muted)}
+.ken-wall i{display:grid;place-items:center;text-align:center;font-style:normal;font-size:12px;color:#7d8c85;border-left:1px dashed #b8c3bc;border-right:1px dashed #b8c3bc}
+@media(max-width:840px){.ken-intro-grid,.ken-reading-path{grid-template-columns:1fr 1fr}.ken-wall{grid-template-columns:1fr}.ken-wall i{padding:14px 0;border-left:0;border-right:0;border-top:1px dashed #b8c3bc;border-bottom:1px dashed #b8c3bc}}
+@media(max-width:520px){.ken-intro-grid,.ken-reading-path{grid-template-columns:1fr}}
+
 /* V4: inline explanatory visuals — diagrams belong to the text, not poster art */
 .explain-visual{margin:34px 0 8px;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:linear-gradient(145deg,#fbfaf5,#f1eee5);box-shadow:0 16px 44px rgba(43,63,55,.055)}
 .explain-visual.compact{margin-top:26px}

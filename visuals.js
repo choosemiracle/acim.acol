@@ -174,6 +174,41 @@
       <path d="M380 66 V132 M514 112 L427 151 M514 260 L429 211 M246 260 L331 211 M246 112 L331 151" class="v-link"/>
       <text x="380" y="342" text-anchor="middle" class="v-caption">先辨别“我在讨论哪一层”，很多看似矛盾的命题才有可能被真正理解。</text>
     `, "五层理论地图图解"),
+    "ken-two-levels": () => base(`
+      <rect x="82" y="48" width="596" height="116" rx="28" class="v-form"/>
+      <text x="380" y="80" text-anchor="middle" class="v-small">第一层 · 实相与幻相</text>
+      <text x="210" y="120" text-anchor="middle" class="v-title">上主 · 真知 · 一体</text>
+      <text x="550" y="120" text-anchor="middle" class="v-title">小我 · 知见 · 分裂</text>
+      <path d="M300 118 H460" class="v-link dash"/>
+      <text x="380" y="148" text-anchor="middle" class="v-caption">这一层在辨别：什么是真实，什么只是梦境中的经验。</text>
+
+      <rect x="82" y="196" width="596" height="116" rx="28" class="v-output"/>
+      <text x="380" y="228" text-anchor="middle" class="v-small">第二层 · 梦境中的两种选择</text>
+      <text x="210" y="268" text-anchor="middle" class="v-title">小我的诠释</text>
+      <text x="550" y="268" text-anchor="middle" class="v-title">圣灵的诠释</text>
+      <path d="M300 266 H460" class="v-link strong" marker-end="url(#arrow)"/>
+      <text x="380" y="296" text-anchor="middle" class="v-caption">世界没有先被“消灭”；同一经验先被重新赋予用途。</text>
+    `, "肯恩所强调的两个理解层次"),
+
+    "ken-form-content": () => base(`
+      <text x="380" y="48" text-anchor="middle" class="v-title">形式回答“发生了什么” · 内涵回答“我让它服务什么”</text>
+      <g transform="translate(86 88)">
+        <rect width="222" height="176" rx="28" class="v-form"/>
+        <text x="111" y="36" text-anchor="middle" class="v-small">外在形式</text>
+        ${pill(30,58,162,"留下 / 离开")}
+        ${pill(30,112,162,"照顾 / 拒绝")}
+      </g>
+      <path d="M320 176 H438" class="v-link strong" marker-end="url(#arrow)"/>
+      <text x="380" y="158" text-anchor="middle" class="v-small">看目的</text>
+      <g transform="translate(452 88)">
+        <rect width="222" height="176" rx="28" class="v-output"/>
+        <text x="111" y="36" text-anchor="middle" class="v-small">内在目的</text>
+        ${pill(30,58,162,"罪咎 / 控制")}
+        ${pill(30,112,162,"宽恕 / 结合","accent")}
+      </g>
+      <text x="380" y="318" text-anchor="middle" class="v-caption">肯恩不会只凭一个行为判断“有没有爱”；同样的形式可以承载完全不同的心念。</text>
+    `, "形式与内涵的辨别图"),
+
     "case-scenes": () => base(`
       <g transform="translate(52 64)">
         <rect width="132" height="105" rx="18" class="v-scene"/><rect x="22" y="28" width="88" height="8" rx="4" class="v-bar"/><rect x="22" y="48" width="58" height="8" rx="4" class="v-bar soft"/><text x="66" y="91" text-anchor="middle" class="v-small">方案被否定</text>
