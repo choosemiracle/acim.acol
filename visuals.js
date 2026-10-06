@@ -263,6 +263,43 @@
       <text x="380" y="286" text-anchor="middle" class="v-caption">现实行动照常进行；变化的是行动不再由受害感、报复与特殊性主导。</text>
     `, "Gary 式高阶宽恕的四步内在运动"),
 
+    "pitfall-map": () => base(`
+      <circle cx="380" cy="180" r="62" class="v-node"/>
+      <text x="380" y="170" text-anchor="middle" class="v-title">灵性化的小我</text>
+      <text x="380" y="193" text-anchor="middle" class="v-small">继续证明 · 继续定罪 · 继续分离</text>
+
+      ${pill(72,62,146,"概念 / 理论")}
+      ${pill(307,28,146,"宽恕 / 情绪")}
+      ${pill(542,62,146,"关系 / 边界")}
+      ${pill(72,256,146,"现实 / 身体")}
+      ${pill(307,290,146,"灵性文化")}
+      ${pill(542,256,146,"算法 / AI")}
+
+      <path d="M218 84 L330 142 M380 78 V118 M542 84 L430 142 M218 278 L330 218 M380 290 V242 M542 278 L430 218" class="v-link dash"/>
+      <text x="380" y="345" text-anchor="middle" class="v-caption">表面问题不同，底层都在问：我是在松开分离，还是把分离包装得更高级？</text>
+    `, "现代修习中六类常见暗礁地图"),
+
+    "two-course-return": () => base(`
+      ${pill(44,142,142,"被故事定义")}
+      <path d="M186 164 H274" class="v-link strong" marker-end="url(#arrow)"/>
+      <g transform="translate(274 106)">
+        <rect width="188" height="116" rx="24" class="v-output"/>
+        <text x="94" y="34" text-anchor="middle" class="v-small">ACIM</text>
+        <text x="94" y="64" text-anchor="middle" class="v-title">看见 · 宽恕 · 松开</text>
+        <text x="94" y="88" text-anchor="middle" class="v-small">不再让形式定义我</text>
+      </g>
+      <path d="M462 164 H536" class="v-link strong" marker-end="url(#arrow)"/>
+      <g transform="translate(536 106)">
+        <rect width="180" height="116" rx="24" class="v-form"/>
+        <text x="90" y="34" text-anchor="middle" class="v-small">ACOL</text>
+        <text x="90" y="64" text-anchor="middle" class="v-title">关系 · 具身 · 创造</text>
+        <text x="90" y="88" text-anchor="middle" class="v-small">让真实重新进入形式</text>
+      </g>
+      <path d="M626 232 C565 302 238 302 132 226" class="v-link dash" marker-end="url(#arrow)"/>
+      <text x="380" y="286" text-anchor="middle" class="v-title">重新进入同一个世界，但不再以同一种目的</text>
+      <text x="380" y="316" text-anchor="middle" class="v-caption">不是“逃离故事”，而是停止被故事定义，再让爱透过身体、关系与行动进入故事。</text>
+    `, "ACIM 与 ACOL 的双重纠偏路径"),
+
     "case-scenes": () => base(`
       <g transform="translate(52 64)">
         <rect width="132" height="105" rx="18" class="v-scene"/><rect x="22" y="28" width="88" height="8" rx="4" class="v-bar"/><rect x="22" y="48" width="58" height="8" rx="4" class="v-bar soft"/><text x="66" y="91" text-anchor="middle" class="v-small">方案被否定</text>

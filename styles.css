@@ -161,6 +161,33 @@ nav{display:flex;gap:26px;font-size:14px;color:var(--muted)}nav a:hover{color:va
 @media(max-width:840px){.gary-intro-grid,.gary-boundaries,.gary-ken-grid{grid-template-columns:1fr}.gary-jafo-grid,.gary-reading-path{grid-template-columns:1fr 1fr}.gary-reading-table>div{grid-template-columns:1fr}.gary-reading-table .table-head{display:none}}
 @media(max-width:520px){.gary-jafo-grid,.gary-reading-path{grid-template-columns:1fr}}
 
+/* ACIM x ACOL pitfalls / contemporary practice */
+.pitfall-hero{background:radial-gradient(circle at 79% 20%,rgba(199,181,149,.26),transparent 36%),radial-gradient(circle at 66% 74%,rgba(181,204,190,.22),transparent 34%)}
+.pitfall-axis{margin:30px 0;padding:24px 28px;border-left:3px solid var(--sage);background:var(--cream);border-radius:0 16px 16px 0}
+.pitfall-axis b{font-size:11px;letter-spacing:.12em;color:var(--sage)}
+.pitfall-axis p{font-family:var(--serif);font-size:20px;line-height:1.75;margin:8px 0 0}
+.pitfall-axis.final{background:#263a33;color:#eef1ec;border-left-color:#9fb6aa}
+.pitfall-axis.final b{color:#bdc9c2}.pitfall-axis.final p{color:#eef1ec}
+.pitfall-list{display:grid;gap:18px;margin-top:30px}
+.pitfall-card{padding:28px 30px;border:1px solid var(--line);border-radius:20px;background:var(--cream);box-shadow:0 10px 32px rgba(43,63,55,.035)}
+.pitfall-card header{display:grid;grid-template-columns:48px 1fr;gap:14px;align-items:start;margin-bottom:16px}
+.pitfall-card header span{display:grid;place-items:center;width:40px;height:40px;border:1px solid #b8c7bd;border-radius:50%;font:12px Georgia,serif;color:var(--sage);background:#eef3ee}
+.pitfall-card h3{font-family:var(--serif);font-size:25px;font-weight:500;line-height:1.45;margin:2px 0 0}
+.pitfall-card p{font-size:15px;line-height:1.95;color:#4d5c57;margin:10px 0}
+.pitfall-card p b{color:var(--ink);font-weight:600}
+.pitfall-card small{display:block;margin-top:18px;padding:14px 16px;border-radius:12px;background:#e7eee8;color:#496257;font-size:13px;line-height:1.75}
+.calibrator-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:30px 0}
+.calibrator-grid article{display:grid;grid-template-columns:42px 1fr;gap:12px;padding:22px;border:1px solid var(--line);border-radius:16px;background:var(--cream)}
+.calibrator-grid span{font:12px Georgia,serif;color:var(--sage)}
+.calibrator-grid p{margin:0;font-family:var(--serif);font-size:17px;line-height:1.7}
+.return-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:30px 0}
+.return-steps article{padding:20px 16px;border-top:1px solid var(--sage);background:rgba(255,253,248,.48)}
+.return-steps span{font:11px Georgia,serif;color:var(--sage)}
+.return-steps b{display:block;font-family:var(--serif);font-size:22px;margin:5px 0}
+.return-steps p{font-size:13px;line-height:1.7;color:var(--muted);margin:0}
+@media(max-width:840px){.calibrator-grid{grid-template-columns:1fr}.return-steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.pitfall-card{padding:22px 20px}.pitfall-card header{grid-template-columns:40px 1fr;gap:10px}.pitfall-card h3{font-size:21px}.pitfall-axis{padding:20px}.pitfall-axis p{font-size:18px}.return-steps{grid-template-columns:1fr}}
+
 /* V4: inline explanatory visuals — diagrams belong to the text, not poster art */
 .explain-visual{margin:34px 0 8px;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:linear-gradient(145deg,#fbfaf5,#f1eee5);box-shadow:0 16px 44px rgba(43,63,55,.055)}
 .explain-visual.compact{margin-top:26px}
