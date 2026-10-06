@@ -300,6 +300,87 @@
       <text x="380" y="316" text-anchor="middle" class="v-caption">不是“逃离故事”，而是停止被故事定义，再让爱透过身体、关系与行动进入故事。</text>
     `, "ACIM 与 ACOL 的双重纠偏路径"),
 
+    "change-orders": () => base(`
+      <g transform="translate(54 62)">
+        <rect width="286" height="236" rx="26" class="v-form"/>
+        <text x="143" y="34" text-anchor="middle" class="v-small">FIRST-ORDER · 系统内改变</text>
+        <rect x="38" y="64" width="210" height="118" rx="18" class="v-scene"/>
+        ${pill(56,82,82,"更多")}
+        ${pill(162,82,68,"更少")}
+        ${pill(92,132,110,"换策略")}
+        <text x="143" y="214" text-anchor="middle" class="v-title">规则 / 目标不变</text>
+      </g>
+
+      <path d="M362 180 H414" class="v-link strong" marker-end="url(#arrow)"/>
+      <text x="388" y="160" text-anchor="middle" class="v-small">退到系统外看</text>
+
+      <g transform="translate(430 62)">
+        <rect width="276" height="236" rx="26" class="v-output"/>
+        <text x="138" y="34" text-anchor="middle" class="v-small">SECOND-ORDER · 系统本身改变</text>
+        <rect x="36" y="64" width="204" height="118" rx="18" class="v-soft-circle"/>
+        <text x="138" y="105" text-anchor="middle" class="v-title">问题怎样被定义？</text>
+        <text x="138" y="132" text-anchor="middle" class="v-title">规则 / 目的是什么？</text>
+        <text x="138" y="158" text-anchor="middle" class="v-small">改变产生行为的框架</text>
+        <text x="138" y="214" text-anchor="middle" class="v-title">系统重组</text>
+      </g>
+      <text x="380" y="338" text-anchor="middle" class="v-caption">第一序不是错误；真正的问题，是需要二序改变时却只会“更多地做同一件事”。</text>
+    `, "第一序改变与第二序改变的系统层次图"),
+
+    "change-three-levels": () => base(`
+      <g transform="translate(54 58)">
+        <rect width="184" height="226" rx="24" class="v-form"/>
+        <text x="92" y="34" text-anchor="middle" class="v-small">第一序 · FORM</text>
+        <text x="92" y="72" text-anchor="middle" class="v-title">换行为 / 对象 / 强度</text>
+        ${pill(38,96,108,"沟通技巧")}
+        ${pill(38,148,108,"预算 / 流程")}
+        <text x="92" y="208" text-anchor="middle" class="v-small">现实调整</text>
+      </g>
+
+      <path d="M248 171 H292" class="v-link strong" marker-end="url(#arrow)"/>
+
+      <g transform="translate(292 58)">
+        <rect width="184" height="226" rx="24" class="v-output"/>
+        <text x="92" y="34" text-anchor="middle" class="v-small">第二序 · PURPOSE</text>
+        <text x="92" y="72" text-anchor="middle" class="v-title">换问题 / 规则 / 目的</text>
+        ${pill(38,96,108,"What for?","accent")}
+        ${pill(38,148,108,"换老师 / 知觉","accent")}
+        <text x="92" y="208" text-anchor="middle" class="v-small">ACIM 深层校准</text>
+      </g>
+
+      <path d="M486 171 H530" class="v-link strong" marker-end="url(#arrow)"/>
+
+      <g transform="translate(530 58)">
+        <rect width="176" height="226" rx="24" class="v-form"/>
+        <text x="88" y="34" text-anchor="middle" class="v-small">再进入 · EXPRESSION</text>
+        <text x="88" y="72" text-anchor="middle" class="v-title">让新目的进入形式</text>
+        ${pill(34,96,108,"关系 / 边界")}
+        ${pill(34,148,108,"身体 / 创造")}
+        <text x="88" y="208" text-anchor="middle" class="v-small">ACOL 具身表达</text>
+      </g>
+      <text x="380" y="330" text-anchor="middle" class="v-caption">完整路径不是从形式逃走，而是让现实行动逐渐服务于一个不同的心智目的。</text>
+    `, "第一序改变、第二序改变与ACIM ACOL实践层次图"),
+
+    "change-loop": () => base(`
+      ${pill(70,54,150,"不安 / 冲突")}
+      ${pill(542,54,150,"旧解决方案")}
+      ${pill(542,258,150,"副作用")}
+      ${pill(70,258,150,"问题更严重")}
+
+      <path d="M220 76 C320 24 448 24 542 76" class="v-link strong" marker-end="url(#arrow)"/>
+      <path d="M617 98 C710 144 710 218 617 258" class="v-link strong" marker-end="url(#arrow)"/>
+      <path d="M542 280 C442 336 320 336 220 280" class="v-link strong" marker-end="url(#arrow)"/>
+      <path d="M145 258 C48 214 48 142 145 98" class="v-link strong" marker-end="url(#arrow)"/>
+
+      <circle cx="380" cy="180" r="70" class="v-node"/>
+      <text x="380" y="171" text-anchor="middle" class="v-title">More of the same</text>
+      <text x="380" y="194" text-anchor="middle" class="v-small">“再多做一点旧办法”</text>
+
+      <path d="M380 110 V56" class="v-link dash"/>
+      <path d="M380 250 V308" class="v-link dash" marker-end="url(#arrow)"/>
+      <text x="380" y="331" text-anchor="middle" class="v-title">二序出口：重新定义问题与目的</text>
+      <text x="380" y="349" text-anchor="middle" class="v-caption">不是更用力地重复旧箭头，而是改变让整个循环成立的规则。</text>
+    `, "more of the same attempted solution如何维持问题的循环图"),
+
     "case-scenes": () => base(`
       <g transform="translate(52 64)">
         <rect width="132" height="105" rx="18" class="v-scene"/><rect x="22" y="28" width="88" height="8" rx="4" class="v-bar"/><rect x="22" y="48" width="58" height="8" rx="4" class="v-bar soft"/><text x="66" y="91" text-anchor="middle" class="v-small">方案被否定</text>
