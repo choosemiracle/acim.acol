@@ -381,6 +381,94 @@
       <text x="380" y="349" text-anchor="middle" class="v-caption">不是更用力地重复旧箭头，而是改变让整个循环成立的规则。</text>
     `, "more of the same attempted solution如何维持问题的循环图"),
 
+    "fp-overview": () => base(`
+      <circle cx="380" cy="176" r="70" class="v-node"/>
+      <text x="380" y="168" text-anchor="middle" class="v-title">LOVE · ONENESS</text>
+      <text x="380" y="191" text-anchor="middle" class="v-small">真实从未需要被修理</text>
+
+      <g transform="translate(54 86)">
+        <rect width="224" height="182" rx="26" class="v-output"/>
+        <text x="112" y="32" text-anchor="middle" class="v-small">ACIM · UNDO</text>
+        ${pill(31,55,162,"分离信念")}
+        ${pill(31,103,162,"宽恕 / 奇迹","accent")}
+        <text x="112" y="160" text-anchor="middle" class="v-title">撤销错误知觉</text>
+      </g>
+
+      <g transform="translate(482 86)">
+        <rect width="224" height="182" rx="26" class="v-form"/>
+        <text x="112" y="32" text-anchor="middle" class="v-small">ACOL · EXPRESS</text>
+        ${pill(31,55,162,"真实身份")}
+        ${pill(31,103,162,"关系 / 具身 / 创造")}
+        <text x="112" y="160" text-anchor="middle" class="v-title">让真实进入形式</text>
+      </g>
+
+      <path d="M278 176 H310" class="v-link strong" marker-end="url(#arrow)"/>
+      <path d="M450 176 H482" class="v-link strong" marker-end="url(#arrow)"/>
+      <text x="380" y="318" text-anchor="middle" class="v-caption">共同根基不是“成为更好的分离自我”，而是识别真实身份，并让经验停止服务于分离。</text>
+    `, "ACIM 与 ACOL 第一性原理总览"),
+
+    "fp-acim-chain": () => base(`
+      ${pill(24,74,126,"真实 / 一体")}
+      <path d="M150 96 H184" class="v-link strong" marker-end="url(#arrow)"/>
+      ${pill(184,74,126,"相信分离")}
+      <path d="M310 96 H344" class="v-link strong" marker-end="url(#arrow)"/>
+      ${pill(344,74,126,"小我 / 知觉")}
+      <path d="M470 96 H504" class="v-link strong" marker-end="url(#arrow)"/>
+      ${pill(504,74,126,"投射 / 特殊性")}
+
+      <path d="M567 118 C650 152 650 224 567 258" class="v-link dash" marker-end="url(#arrow)"/>
+      ${pill(504,258,126,"罪咎 / 冲突")}
+      <path d="M504 280 H470" class="v-link strong" marker-end="url(#arrow)"/>
+      ${pill(344,258,126,"宽恕 / 奇迹","accent")}
+      <path d="M344 280 H310" class="v-link strong" marker-end="url(#arrow)"/>
+      ${pill(184,258,126,"正确知觉","accent")}
+      <path d="M184 280 H150" class="v-link strong" marker-end="url(#arrow)"/>
+      ${pill(24,258,126,"真知 / 一体","accent")}
+
+      <path d="M407 122 V234" class="v-link dash"/>
+      <text x="407" y="180" text-anchor="middle" class="v-small">奇迹不是修理实相</text>
+      <text x="407" y="198" text-anchor="middle" class="v-small">而是撤回对错误前提的信任</text>
+      <text x="380" y="340" text-anchor="middle" class="v-caption">下降是“分离如何被经验”，返回是“知觉如何被纠正”；起点与终点的真实并没有发生本体性变化。</text>
+    `, "ACIM 从分离信念到宽恕与真知的推导链"),
+
+    "fp-acol-chain": () => base(`
+      ${pill(24,146,112,"Love")}
+      <path d="M136 168 H166" class="v-link strong" marker-end="url(#arrow)"/>
+      ${pill(166,146,112,"Identity")}
+      <path d="M278 168 H308" class="v-link strong" marker-end="url(#arrow)"/>
+      ${pill(308,146,126,"Wholeheartedness","accent")}
+      <path d="M434 168 H464" class="v-link strong" marker-end="url(#arrow)"/>
+      ${pill(464,146,132,"Union + Relation","accent")}
+      <path d="M596 168 H626" class="v-link strong" marker-end="url(#arrow)"/>
+      ${pill(626,146,110,"Creation")}
+
+      <text x="80" y="116" text-anchor="middle" class="v-small">现实条件</text>
+      <text x="222" y="116" text-anchor="middle" class="v-small">接受真实的我</text>
+      <text x="371" y="116" text-anchor="middle" class="v-small">心与心智结合</text>
+      <text x="530" y="116" text-anchor="middle" class="v-small">差异不等于分离</text>
+      <text x="681" y="116" text-anchor="middle" class="v-small">形式中的表达</text>
+
+      <path d="M222 194 C270 266 488 266 530 194" class="v-link dash"/>
+      <text x="376" y="260" text-anchor="middle" class="v-title">Learning → Knowing → Embodied Expression</text>
+      <text x="380" y="302" text-anchor="middle" class="v-caption">ACOL 的重点不是制造一个新 Self，而是停止延迟完整性，让已被认出的真实通过关系与形式得到表达。</text>
+    `, "ACOL 从爱与身份到关系、知晓与创造的推导链"),
+
+    "fp-u-path": () => base(`
+      <path d="M92 76 C102 246 220 310 380 310 C540 310 658 246 668 76" class="v-link strong"/>
+      ${pill(28,54,128,"Love / Oneness")}
+      ${pill(156,128,126,"分离身份")}
+      ${pill(252,222,126,"投射 / 特殊性")}
+      ${pill(317,286,126,"宽恕 / 奇迹","accent")}
+      ${pill(414,222,126,"True Self","accent")}
+      ${pill(510,128,126,"关系 / 具身")}
+      ${pill(604,54,128,"Creation")}
+
+      <text x="112" y="336" text-anchor="middle" class="v-small">ACIM · UNDO</text>
+      <text x="648" y="336" text-anchor="middle" class="v-small">ACOL · EMBODY / EXPRESS</text>
+      <text x="380" y="44" text-anchor="middle" class="v-title">表面像“离开又回归”，底层却是：真实从未离开</text>
+      <text x="380" y="360" text-anchor="middle" class="v-caption">U 型只是学习视角：下降描述误认怎样展开，上升描述误认怎样被撤销并重新进入形式。</text>
+    `, "ACIM 与 ACOL 第一性原理 U 型学习路径"),
+
     "case-scenes": () => base(`
       <g transform="translate(52 64)">
         <rect width="132" height="105" rx="18" class="v-scene"/><rect x="22" y="28" width="88" height="8" rx="4" class="v-bar"/><rect x="22" y="48" width="58" height="8" rx="4" class="v-bar soft"/><text x="66" y="91" text-anchor="middle" class="v-small">方案被否定</text>
