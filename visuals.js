@@ -99,22 +99,35 @@
         <path d="M37 98 Q69 68 101 98 V142 H37Z" class="v-person"/>
         <text x="69" y="164" text-anchor="middle" class="v-small">工作 · 关系 · 创造</text>
       </g>
-      <text x="380" y="324" text-anchor="middle" class="v-caption">ACOL 的推进：不是消灭个人，而是不再让个人性只服务于特殊与隔绝。</text>
+      <text x="380" y="324" text-anchor="middle" class="v-caption">ACOL 的主张：个人性不必继续服务于特殊与隔绝，而可以被重新理解为关系中的表达。</text>
     `, "真实自我通过个人形式进入生活的图示"),
     "integration-bridge": () => base(`
-      <path d="M70 90 C180 30 270 40 354 145" class="v-stream left"/>
-      <path d="M690 90 C580 30 490 40 406 145" class="v-stream right"/>
-      <text x="120" y="58" class="v-title">ACIM</text>
-      <text x="640" y="58" text-anchor="end" class="v-title">ACOL</text>
-      ${pill(70,112,112,"觉察")}
-      ${pill(190,86,112,"松开")}
-      ${pill(578,112,112,"表达")}
-      ${pill(458,86,112,"关系")}
-      ${node(380,180,72,"接受","Receive")}
-      <path d="M380 252 V294" class="v-link strong" marker-end="url(#arrow)"/>
-      ${pill(302,298,156,"现实行动","accent")}
-      <text x="380" y="344" text-anchor="middle" class="v-caption">融合不是把两本书混成一套，而是让两种镜头在同一件生活事件里接力。</text>
-    `, "ACIM 与 ACOL 五步融合桥梁图"),
+      <circle cx="380" cy="178" r="64" class="v-node"/>
+      <text x="380" y="170" text-anchor="middle" class="v-title">同一事件</text>
+      <text x="380" y="192" text-anchor="middle" class="v-small">事实 · 情绪 · 决定</text>
+
+      <g transform="translate(60 72)">
+        <rect width="230" height="184" rx="26" class="v-output"/>
+        <text x="115" y="32" text-anchor="middle" class="v-small">ACIM LENS</text>
+        <text x="115" y="62" text-anchor="middle" class="v-title">回到心灵</text>
+        ${pill(34,82,162,"投射 / 抉择者")}
+        ${pill(34,130,162,"目的 / 宽恕","accent")}
+      </g>
+
+      <g transform="translate(470 72)">
+        <rect width="230" height="184" rx="26" class="v-form"/>
+        <text x="115" y="32" text-anchor="middle" class="v-small">ACOL LENS</text>
+        <text x="115" y="62" text-anchor="middle" class="v-title">关系与表达</text>
+        ${pill(34,82,162,"Wholeheartedness")}
+        ${pill(34,130,162,"Relation / Form")}
+      </g>
+
+      <path d="M316 178 H290" class="v-link strong" marker-end="url(#arrow)"/>
+      <path d="M444 178 H470" class="v-link strong" marker-end="url(#arrow)"/>
+      <path d="M380 242 V292" class="v-link strong" marker-end="url(#arrow)"/>
+      ${pill(302,296,156,"现实行动","accent")}
+      <text x="380" y="350" text-anchor="middle" class="v-caption">两副镜头并置检视同一事件；先后只是实践编排，不构成形上学上的“接力升级”。</text>
+    `, "ACIM 与 ACOL 双镜头实践工作流"),
     "two-lenses": () => base(`
       <g transform="translate(90 82)">
         <circle cx="118" cy="90" r="88" class="v-lens"/>
@@ -133,7 +146,7 @@
       <circle cx="380" cy="286" r="44" class="v-node"/>
       <text x="380" y="281" text-anchor="middle" class="v-title">生活</text>
       <text x="380" y="300" text-anchor="middle" class="v-small">同一件事</text>
-      <text x="380" y="348" text-anchor="middle" class="v-caption">不是二选一：强烈定罪时先用 ACIM，看清之后再用 ACOL 进入关系与表达。</text>
+      <text x="380" y="348" text-anchor="middle" class="v-caption">不是高低顺序：ACIM 检查心灵、投射与目的；ACOL 另从关系、全心与形式提问。</text>
     `, "ACIM 与 ACOL 两个镜头观察同一生活事件"),
     "reset-wave": () => base(`
       <path d="M60 208 C130 82 190 314 260 180 S390 80 455 180 S585 300 700 142" class="v-wave"/>
@@ -454,101 +467,110 @@
     `, "ACOL 从爱与身份到关系、知晓与创造的推导链"),
 
     "fp-u-path": () => base(`
-      <path d="M92 76 C102 246 220 310 380 310 C540 310 658 246 668 76" class="v-link strong"/>
-      ${pill(28,54,128,"Love / Oneness")}
-      ${pill(156,128,126,"分离身份")}
-      ${pill(252,222,126,"投射 / 特殊性")}
-      ${pill(317,286,126,"宽恕 / 奇迹","accent")}
-      ${pill(414,222,126,"True Self","accent")}
-      ${pill(510,128,126,"关系 / 具身")}
-      ${pill(604,54,128,"Creation")}
+      <text x="380" y="34" text-anchor="middle" class="v-title">共同纠正点之后，不是一条“ACIM → ACOL”的单线</text>
+      ${pill(317,54,126,"Love / Oneness")}
+      <path d="M380 78 V104" class="v-link strong" marker-end="url(#arrow)"/>
+      ${pill(317,104,126,"分离知觉")}
+      <path d="M380 128 V154" class="v-link strong" marker-end="url(#arrow)"/>
+      ${pill(317,154,126,"宽恕 / 奇迹","accent")}
 
-      <text x="112" y="336" text-anchor="middle" class="v-small">ACIM · UNDO</text>
-      <text x="648" y="336" text-anchor="middle" class="v-small">ACOL · EMBODY / EXPRESS</text>
-      <text x="380" y="44" text-anchor="middle" class="v-title">表面像“离开又回归”，底层却是：真实从未离开</text>
-      <text x="380" y="360" text-anchor="middle" class="v-caption">U 型只是学习视角：下降描述误认怎样展开，上升描述误认怎样被撤销并重新进入形式。</text>
-    `, "ACIM 与 ACOL 第一性原理 U 型学习路径"),
+      <path d="M360 178 C310 208 252 226 208 248" class="v-link strong" marker-end="url(#arrow)"/>
+      <path d="M400 178 C450 208 508 226 552 248" class="v-link strong" marker-end="url(#arrow)"/>
+
+      <g transform="translate(82 248)">
+        <rect width="252" height="82" rx="20" class="v-output"/>
+        <text x="126" y="26" text-anchor="middle" class="v-small">ACIM · STRICT PATH</text>
+        <text x="126" y="50" text-anchor="middle" class="v-title">正见 / 真实世界 → Knowledge</text>
+        <text x="126" y="69" text-anchor="middle" class="v-small">知觉完成使命，形式不获本体地位</text>
+      </g>
+
+      <g transform="translate(426 248)">
+        <rect width="252" height="82" rx="20" class="v-form"/>
+        <text x="126" y="26" text-anchor="middle" class="v-small">ACOL · INDEPENDENT BRANCH</text>
+        <text x="126" y="50" text-anchor="middle" class="v-title">Relationship → Embodiment</text>
+        <text x="126" y="69" text-anchor="middle" class="v-small">进一步展开 personal form / creation</text>
+      </g>
+
+      <text x="380" y="354" text-anchor="middle" class="v-caption">两书可以对读，但 ACOL 对关系与形式的积极主张不是 ACIM 形上学的必然结论。</text>
+    `, "ACIM 与 ACOL 第一性原理分叉路径"),
 
     "axiom-architecture": () => base(`
-      <g transform="translate(92 40)">
-        <rect width="576" height="54" rx="18" class="v-output"/>
-        <text x="288" y="22" text-anchor="middle" class="v-small">LAYER 1 · REALITY</text>
-        <text x="288" y="42" text-anchor="middle" class="v-title">A1 / A2 / B1 · 实相 · 一体 · 爱</text>
+      <g transform="translate(104 34)">
+        <rect width="552" height="52" rx="18" class="v-output"/>
+        <text x="276" y="21" text-anchor="middle" class="v-small">LEVEL 1 · TRUTH / ILLUSION</text>
+        <text x="276" y="40" text-anchor="middle" class="v-title">A1 / A2 · 真知与一体  ≠  分离世界</text>
       </g>
-      <path d="M380 96 V116" class="v-link strong" marker-end="url(#arrow)"/>
-      <g transform="translate(92 116)">
-        <rect width="576" height="54" rx="18" class="v-form"/>
-        <text x="288" y="22" text-anchor="middle" class="v-small">LAYER 2 · EXPERIENCE</text>
-        <text x="288" y="42" text-anchor="middle" class="v-title">A3 / A4 / A5 · 知觉 · 选择 · 投射</text>
+      <path d="M380 88 V108" class="v-link strong" marker-end="url(#arrow)"/>
+      <g transform="translate(104 108)">
+        <rect width="552" height="62" rx="18" class="v-form"/>
+        <text x="276" y="20" text-anchor="middle" class="v-small">LEVEL 2 · DREAM / DECISION MAKER</text>
+        <text x="276" y="40" text-anchor="middle" class="v-title">A3 / A4 / A5 · 知觉 · 抉择者 · 投射</text>
+        <text x="276" y="56" text-anchor="middle" class="v-small">小我 ← 重新选择 → 圣灵</text>
       </g>
       <path d="M380 172 V192" class="v-link strong" marker-end="url(#arrow)"/>
-      <g transform="translate(92 192)">
-        <rect width="576" height="54" rx="18" class="v-output"/>
-        <text x="288" y="22" text-anchor="middle" class="v-small">LAYER 3 · CORRECTION</text>
-        <text x="288" y="42" text-anchor="middle" class="v-title">A6 / A7 · 目的 · 宽恕 · 奇迹</text>
+      <g transform="translate(184 192)">
+        <rect width="392" height="52" rx="18" class="v-output"/>
+        <text x="196" y="21" text-anchor="middle" class="v-small">CORRECTION · A6 / A7</text>
+        <text x="196" y="40" text-anchor="middle" class="v-title">用途改变 · 宽恕 · 奇迹</text>
       </g>
-      <path d="M380 248 V268" class="v-link strong" marker-end="url(#arrow)"/>
-      <g transform="translate(92 268)">
-        <rect width="276" height="58" rx="18" class="v-scene"/>
-        <text x="138" y="23" text-anchor="middle" class="v-small">IDENTITY / RELATION</text>
-        <text x="138" y="44" text-anchor="middle" class="v-title">B2 / B3 / B5</text>
+
+      <path d="M360 246 C310 262 266 278 230 294" class="v-link strong" marker-end="url(#arrow)"/>
+      <path d="M400 246 C450 262 494 278 530 294" class="v-link strong" marker-end="url(#arrow)"/>
+
+      <g transform="translate(70 294)">
+        <rect width="280" height="56" rx="18" class="v-scene"/>
+        <text x="140" y="22" text-anchor="middle" class="v-small">ACIM · STRICT ENDPOINT</text>
+        <text x="140" y="43" text-anchor="middle" class="v-title">真实世界 → 知觉终结 → Knowledge</text>
       </g>
-      <g transform="translate(392 268)">
-        <rect width="276" height="58" rx="18" class="v-scene"/>
-        <text x="138" y="23" text-anchor="middle" class="v-small">FORM / CREATION</text>
-        <text x="138" y="44" text-anchor="middle" class="v-title">B4 / B6</text>
+      <g transform="translate(410 294)">
+        <rect width="280" height="56" rx="18" class="v-scene"/>
+        <text x="140" y="22" text-anchor="middle" class="v-small">ACOL · REINTERPRETATION</text>
+        <text x="140" y="43" text-anchor="middle" class="v-title">B1–B6 · Relationship / Form / Creation</text>
       </g>
-      <path d="M368 297 H392" class="v-link strong" marker-end="url(#arrow)"/>
-      <text x="380" y="350" text-anchor="middle" class="v-caption">先建立“真实与错误”的区分，再谈纠正；先厘清身份与关系，再谈形式与创造。</text>
-    `, "ACIM 与 ACOL 公理化理论的五层结构"),
+    `, "ACIM 两个层次与 ACOL 独立分支架构"),
 
     "axiom-dependency": () => base(`
-      <text x="380" y="34" text-anchor="middle" class="v-title">从公理到定理：依赖关系比结论本身更重要</text>
+      <text x="380" y="32" text-anchor="middle" class="v-title">依赖关系：连续，不等于必然推导</text>
 
-      <g transform="translate(50 66)">
-        <rect width="176" height="94" rx="20" class="v-form"/>
-        <text x="88" y="28" text-anchor="middle" class="v-small">ACIM CORE</text>
-        <text x="88" y="54" text-anchor="middle" class="v-title">A1 – A7</text>
-        <text x="88" y="76" text-anchor="middle" class="v-small">实相 · 知觉 · 投射 · 目的 · 纠正</text>
+      <g transform="translate(52 58)">
+        <rect width="198" height="86" rx="20" class="v-output"/>
+        <text x="99" y="25" text-anchor="middle" class="v-small">ACIM CORE</text>
+        <text x="99" y="50" text-anchor="middle" class="v-title">A1 – A7</text>
+        <text x="99" y="69" text-anchor="middle" class="v-small">两个层次 · 抉择者 · 宽恕</text>
+      </g>
+      <path d="M250 101 H286" class="v-link strong" marker-end="url(#arrow)"/>
+      <g transform="translate(286 58)">
+        <rect width="198" height="86" rx="20" class="v-output"/>
+        <text x="99" y="25" text-anchor="middle" class="v-small">ACIM THEOREMS</text>
+        <text x="99" y="50" text-anchor="middle" class="v-title">T1 – T6 + T12</text>
+        <text x="99" y="69" text-anchor="middle" class="v-small">因果 · 课堂 · 形式/内涵</text>
+      </g>
+      <path d="M484 101 H520" class="v-link strong" marker-end="url(#arrow)"/>
+      <g transform="translate(520 58)">
+        <rect width="188" height="86" rx="20" class="v-scene"/>
+        <text x="94" y="25" text-anchor="middle" class="v-small">ACIM ENDPOINT</text>
+        <text x="94" y="50" text-anchor="middle" class="v-title">正见 → Knowledge</text>
+        <text x="94" y="69" text-anchor="middle" class="v-small">形式最终完成使命</text>
       </g>
 
-      <g transform="translate(292 66)">
-        <rect width="176" height="94" rx="20" class="v-output"/>
-        <text x="88" y="28" text-anchor="middle" class="v-small">FIRST THEOREMS</text>
-        <text x="88" y="54" text-anchor="middle" class="v-title">T1 – T6</text>
-        <text x="88" y="76" text-anchor="middle" class="v-small">因果 · 形式 · 宽恕 · 关系</text>
+      <g transform="translate(120 220)">
+        <rect width="220" height="88" rx="20" class="v-form"/>
+        <text x="110" y="25" text-anchor="middle" class="v-small">ACOL · STRONG CONTINUITY</text>
+        <text x="110" y="50" text-anchor="middle" class="v-title">B1 – B4 → T7 / T8</text>
+        <text x="110" y="70" text-anchor="middle" class="v-small">爱 · 身份 · 全心 · 学习过渡</text>
+      </g>
+      <g transform="translate(420 220)">
+        <rect width="220" height="88" rx="20" class="v-form"/>
+        <text x="110" y="25" text-anchor="middle" class="v-small">ACOL · REINTERPRETATION</text>
+        <text x="110" y="50" text-anchor="middle" class="v-title">B5 / B6 → T9 – T11</text>
+        <text x="110" y="70" text-anchor="middle" class="v-small">关系 · personal form · creation</text>
       </g>
 
-      <g transform="translate(534 66)">
-        <rect width="176" height="94" rx="20" class="v-form"/>
-        <text x="88" y="28" text-anchor="middle" class="v-small">ACOL EXTENSION</text>
-        <text x="88" y="54" text-anchor="middle" class="v-title">B1 – B6</text>
-        <text x="88" y="76" text-anchor="middle" class="v-small">身份 · 全心 · 关系 · 具身 · 创造</text>
-      </g>
+      <path d="M385 144 C324 174 268 190 230 220" class="v-link dash" marker-end="url(#arrow)"/>
+      <path d="M385 144 C446 174 492 190 530 220" class="v-link dash" marker-end="url(#arrow)"/>
 
-      <path d="M226 113 H292" class="v-link strong" marker-end="url(#arrow)"/>
-      <path d="M468 113 H534" class="v-link strong" marker-end="url(#arrow)"/>
-
-      <g transform="translate(170 216)">
-        <rect width="188" height="86" rx="20" class="v-output"/>
-        <text x="94" y="28" text-anchor="middle" class="v-small">IDENTITY THEOREMS</text>
-        <text x="94" y="54" text-anchor="middle" class="v-title">T7 – T9</text>
-        <text x="94" y="73" text-anchor="middle" class="v-small">认出 Self · 学习终结 · 差异非分离</text>
-      </g>
-
-      <g transform="translate(402 216)">
-        <rect width="188" height="86" rx="20" class="v-output"/>
-        <text x="94" y="28" text-anchor="middle" class="v-small">EXPRESSION THEOREMS</text>
-        <text x="94" y="54" text-anchor="middle" class="v-title">T10 – T12</text>
-        <text x="94" y="73" text-anchor="middle" class="v-small">具身 · 创造 · 实践闭环</text>
-      </g>
-
-      <path d="M380 160 C348 184 300 198 264 216" class="v-link" marker-end="url(#arrow)"/>
-      <path d="M622 160 C590 188 542 198 496 216" class="v-link" marker-end="url(#arrow)"/>
-      <path d="M358 259 H402" class="v-link strong" marker-end="url(#arrow)"/>
-
-      <text x="380" y="340" text-anchor="middle" class="v-caption">后半部不是凭空出现：它依赖前面对实相、知觉、目的与身份的澄清；否则“具身”“创造”很容易退化为小我扩张。</text>
-    `, "ACIM 与 ACOL 公理和定理的依赖网络"),
+      <text x="380" y="348" text-anchor="middle" class="v-caption">虚线表示“可对话／有连续性”，不是形式逻辑推导；尤其 B5/B6 必须保留与肯恩式 ACIM 的形上张力。</text>
+    `, "ACIM 核心与 ACOL 连续及重释分支的依赖网络"),
 
     "case-scenes": () => base(`
       <g transform="translate(52 64)">
